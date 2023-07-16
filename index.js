@@ -23,6 +23,8 @@ function displayCards(cardsArray) {
 }
 /*
 // my code from fetch lab
+// you did not need for booksObject = fetch , but Flatiron fetch lab
+// assignment required that for npm test to give grade of PASS
 
 function fetchBooks() {
   const booksObject = fetch("https://anapioficeandfire.com/api/books")

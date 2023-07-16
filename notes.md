@@ -11,7 +11,6 @@
 # To Do 7/7
 - []  Make calls inside index.js to format table of db.json data
     - [x] Fetch data from objects in db.json backend
-    - [] Display all the data from db.json Fetch on html page as "cards"
 
 # To Do 7/15
 - [x] Create template and write text into README.md from Flatiron example
@@ -24,3 +23,6 @@
     - [x] git commit -m "what changes you made"
     - [x] git push
 
+# To Do 7/18
+- [] Display all the data from db.json Fetch on html page as "cards"
+- [] 
