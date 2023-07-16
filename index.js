@@ -73,12 +73,12 @@ function displayCards(cardsArray) {
 
 // Below is code for button click event to Fetch LB Cards from BackEnd Database
 
-// const cardsButton = document.getElementById('cardsButton')
-// console.log(cardsButton) ;
-// cardsButton.addEventListener('click', fetchCards);
+  const cardsButton = document.getElementById('cardsButton')
+  console.log(cardsButton) ;
+  cardsButton.addEventListener('click', fetchCards);
 
 // function fetchButton() {
-  document.addEventListener('DOMContentLoaded', fetchCards);
+// document.addEventListener('DOMContentLoaded', fetchCards);
 // } ;
 // fetchButton() ;
 console.log("roscoe");
