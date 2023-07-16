@@ -24,5 +24,8 @@
     - [x] git push
 
 # To Do 7/18
-- [] Display all the data from db.json Fetch on html page as "cards"
+- [x] Display all the data from db.json Fetch on html page as "cards"
+    - [x] Troubleshoot how to fix "Undefined" being printed inside h2 tags
+        - [] Need to improve how you display data - maybe use CSS ???
+    - [] Display cards in structured list or table format
 - [] 

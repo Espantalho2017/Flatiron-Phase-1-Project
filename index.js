@@ -1,26 +1,37 @@
 
 console.log("Hello Roscoe") ;
 
-fetch("http://localhost:3000/telecom-systems")
+function fetchCards () {
+  fetch("http://localhost:3000/telecom-systems")
   .then((resp) => resp.json())
   .then((cardsArray) => {
     console.log(cardsArray) ;
     displayCards(cardsArray) ;
   }
     );
+}
 
 function displayCards(cardsArray) {
   console.log(cardsArray) ;
-  // maybe make main the body tag in my existing index.html???
-  const body = document.querySelector('body');
+  const main = document.querySelector('main');
   cardsArray.forEach(card => {
     const h2 = document.createElement('h2');
-    h2.innerHTML = card.name;
-    body.appendChild(h2);
+    // html display method used below needs improvement
+    h2.innerHTML = [card.radioLinkType , '   ',
+                    card.frequencyUpLink , '   ',
+                    card.antennaDiameterUpLink] ;
+    main.appendChild(h2);
 
 }
 )
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  fetchCards();
+});
+
+console.log("roscoe");
+
 /*
 // my code from fetch lab
 // you did not need for booksObject = fetch , but Flatiron fetch lab
