@@ -49,10 +49,15 @@
     - [x] Used .addEventListener() for 2nd of 2 events required in this project 
 
 - # To Do 7/22
-- [] Get all Input Value fields installed and working in LB Form
+- [x] Change color to something other than pink and violet - maybe green
+- [x] Make Telecom Cards button much bigger to see
+- [x] Get all Input Value fields installed and working in Tx LB Form
+    - Note that there are Value fields that are calculated versus installed
+- [] Get all Input Value fields installed and working in Rx LB Form
+    - Note that there are Value fields that are calculated versus installed
 - [] Display cards in structured list or table format
     - [] Start with "Table Header" for the 5 objects
     - [] Stretch goal is to get data in cards to look like LB Table
 - [] Display cards to the right of these Link Budget Forms
     -[] Maybe use CSS to style cards to the right???
-    
+

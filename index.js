@@ -20,11 +20,16 @@ function handleFormSubmit(e) {
   // use Event.preventDefault() to 
   // prevent the default action of the "submit" event from occuring
   console.log(e.target) ;
-  const txFrequency = e.target["tx-input-frequency"].value
+  const txFrequency = e.target["tx-frequency"].value
   const txAntennaDiameter = e.target["tx-antenna-diameter"].value
   const txApertureEfficiency = e.target["tx-aperture-efficiency"].value
+  const txPower = e.target["tx-power"].value
+  const range = e.target["range"].value
+  const bandwidth = e.target["bandwidth"].value
+  const rxGT = e.target["rx-g-over-t"].value
 
-  console.log(txFrequency, txAntennaDiameter, txApertureEfficiency) ;
+  console.log(txFrequency, txAntennaDiameter, txApertureEfficiency, 
+    txPower, range, bandwidth, rxGT) ;
   // this function probably needs to return values in an array/object
   // the console.log above is not showing, so function not invoked correctly
 }

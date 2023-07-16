@@ -15,17 +15,33 @@
 
     <form id="create-task-form" action="" method="POST">
     <!-- below is 1st input line for Transmit (Tx) frequency -->
-      <label for="tx-input-frequency">Tx Frequency in Ghz:</label>
-      <input type="text" id="tx-input-frequency" name="tx-input-frequency" placeholder="input value">
+      <label for="tx-frequency">Tx Frequency:</label>
+      <input type="text" id="tx-frequency" name="tx-frequency" placeholder="input value">
 
       <!-- below is 2nd input line for Tx Antenna Diameter in Meters -->
-    <label for="tx-antenna-diameter">Antenna Diameter in Meters:</label>
+    <label for="tx-antenna-diameter">Antenna Diameter:</label>
     <input type="text" id="tx-antenna-diameter" name="tx-antenna-diameter" placeholder="input value">
     
    <!-- below is 3rd input line for Antenna Aperture Efficiency -->
-   <label for="tx-aperture-effiency">Antenna Aperture Efficiency as Fraction of 1:</label>
+   <label for="tx-aperture-effiency">Antenna Aperture Efficiency:</label>
    <input type="text" id="tx-aperture-efficiency" name="tx-aperture-efficiency" placeholder="input value">
    
+    <!-- below is 4th input line for Tx Power at Antenna Feed in Watts -->
+    <label for="tx-power">Tx Power at Antenna Feed:</label>
+    <input type="text" id="tx-power" name="tx-power" placeholder="input value">
+
+    <!-- below is 5th input line for Range to Target in km -->
+    <label for="range">Range to Target:</label>
+    <input type="text" id="range" name="range" placeholder="input value">
+
+    <!-- below is 6th input line for Bandwidth in Hz -->
+   <label for="bandwidth">Bandwidth:</label>
+   <input type="text" id="bandwidth" name="bandwidth" placeholder="input value">
+
+   <!-- below is 7th input line for Rx Antenna G/T in dB/K -->
+   <label for="rx-g-over-t">Rx Antenna G/T:</label>
+   <input type="text" id="rx-g-over-t" name="rx-g-over-t" placeholder="input value">
+
     <!-- Submit button that "I hope" will save ALL inputs into variable(s) -->
     <input type="submit" value="Submit Values to Calculate">
 
