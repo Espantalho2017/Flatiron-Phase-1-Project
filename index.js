@@ -19,7 +19,7 @@ function handleFormSubmit(e) {
   e.preventDefault() ;
   // use Event.preventDefault() to 
   // prevent the default action of the "submit" event from occuring
-  console.log(e.target.value);
+  console.log(e.target) ;
   const txFrequency = e.target["tx-input-frequency"].value
   const txAntennaDiameter = e.target["tx-antenna-diameter"].value
   const txApertureEfficiency = e.target["tx-aperture-efficiency"].value
