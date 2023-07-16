@@ -1,7 +1,6 @@
 
 
-# website description
-
+# Description of my website
 
 # To Do 7/6
 - [x] Write a To Do item
@@ -27,5 +26,11 @@
 - [x] Display all the data from db.json Fetch on html page as "cards"
     - [x] Troubleshoot how to fix "Undefined" being printed inside h2 tags
         - [] Need to improve how you display data - maybe use CSS ???
-    - [] Display cards in structured list or table format
-- [] 
+# To Do 7/19
+- [x] Create 2 Link Budget Tables for Uplink and Downlink sides of LB
+    -[] Maybe use CSS to style Link Budget form to the left???
+- [] Create Forms to Input Link Budget Value in each Table row
+    - [] A Submit/Click Event??
+- [] Display cards to the right of these Link Budget Forms
+    -[] Maybe use CSS to style cards to the right???
+- [] Display cards in structured list or table format
