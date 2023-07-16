@@ -13,3 +13,14 @@
     - [x] Fetch data from objects in db.json backend
     - [] Display all the data from db.json Fetch on html page as "cards"
 
+# To Do 7/15
+- [x] Create template and write text into README.md from Flatiron example
+- [x] Get db.json open using below commands: 
+    - [x] npm install json-server 
+    - [x] json-server --watch db.json
+    - [x] Control C => this gets you out of executing the db.json use
+- [x] Make 4th of at least 30 commits to Git using below commands
+    - [x] git add .
+    - [x] git commit -m "what changes you made"
+    - [x] git push
+
