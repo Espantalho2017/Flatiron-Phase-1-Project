@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // get the form and add an event listener
 function addingMoreEventListeners() {
   // you can nest the 2 commands like below
-  document.getElementById("create-task-form").addEventListener("submit", handleFormSubmit)
+  document.getElementById("create-link-budget-form").addEventListener("submit", handleFormSubmit)
 }
 
 function handleFormSubmit(e) {
@@ -20,18 +20,33 @@ function handleFormSubmit(e) {
   // use Event.preventDefault() to 
   // prevent the default action of the "submit" event from occuring
   console.log(e.target) ;
+
+  // below are the input values for the Transmit side of the LB Form
   const txFrequency = e.target["tx-frequency"].value
   const txAntennaDiameter = e.target["tx-antenna-diameter"].value
   const txApertureEfficiency = e.target["tx-aperture-efficiency"].value
   const txPower = e.target["tx-power"].value
-  const range = e.target["range"].value
-  const bandwidth = e.target["bandwidth"].value
-  const rxGT = e.target["rx-g-over-t"].value
+  const txRange = e.target["tx-range"].value
+  const txBandwidth = e.target["tx-bandwidth"].value
+  const rxGT = e.target["rx-g-over-t"].value  
 
   console.log(txFrequency, txAntennaDiameter, txApertureEfficiency, 
-    txPower, range, bandwidth, rxGT) ;
-  // this function probably needs to return values in an array/object
-  // the console.log above is not showing, so function not invoked correctly
+    txPower, txRange, txBandwidth, rxGT) ;
+  // this function maybe  needs to return values in an array/object
+
+  // below are the input values for the Receive side of the LB Form
+  const rxFrequency = e.target["rx-frequency"].value
+  const rxAntennaDiameter = e.target["rx-antenna-diameter"].value
+  const rxApertureEfficiency = e.target["rx-aperture-efficiency"].value
+  const lnaNoiseTemp = e.target["lna-noise-temp"].value
+  const txEIRP = e.target["tx-eirp"].value
+  const rxRange = e.target["rx-range"].value
+  const rxBandwidth = e.target["rx-bandwidth"].value
+
+  console.log(rxFrequency, rxAntennaDiameter, rxApertureEfficiency, 
+    lnaNoiseTemp, txEIRP, rxRange, rxBandwidth) ;
+  // this function maybe needs to return values in an array/object
+
 }
 
 
@@ -39,7 +54,6 @@ function handleFormSubmit(e) {
 
 console.log("Hello Roscoe") ;
 
-// document.addEventListener('DOMContentLoaded', function() {
 function fetchCards () {
   fetch("http://localhost:3000/telecom-systems")
   .then((resp) => resp.json())
@@ -49,17 +63,11 @@ function fetchCards () {
    const divCardsContainer = document.getElementById('cardInfo');
    cardsArray.forEach(card => {
     const h2 = document.createElement('h2');
-    // html display method used below needs improvement
- //   h2.innerText = [card.radioLinkType , '   ',
- //                   card.frequencyUpLink , '   ',
- //                   card.antennaDiameterUpLink] ;
- //   divCardsContainer.appendChild(h2);
 
 })
   }
     );
 }
-// });
 
 function displayCards(cardsArray) {
   console.log(cardsArray) ;
@@ -82,41 +90,8 @@ function displayCards(cardsArray) {
   console.log(cardsButton) ;
   cardsButton.addEventListener('click', fetchCards);
 
-// function fetchButton() {
-// document.addEventListener('DOMContentLoaded', fetchCards);
-// } ;
-// fetchButton() ;
 console.log("roscoe");
 
-/*
-// my code from fetch lab
-// you did not need for booksObject = fetch , but Flatiron fetch lab
-// assignment required that for npm test to give grade of PASS
-
-function fetchBooks() {
-  const booksObject = fetch("https://anapioficeandfire.com/api/books")
-  .then((resp) => resp.json())
-  .then((json) => renderBooks(json));
-  return booksObject ;
-}
-// To pass the tests, don't forget to return your fetch!
-// it should call the second function, renderBooks(), 
-// passing in the JSON-ified data as the argument.
-
-function renderBooks(books) {
-  const main = document.querySelector('main');
-  books.forEach(book => {
-    const h2 = document.createElement('h2');
-    h2.innerHTML = book.name;
-    main.appendChild(h2);
-  });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks();
-});
-
-*/
 
 
   

@@ -53,8 +53,12 @@
 - [x] Make Telecom Cards button much bigger to see
 - [x] Get all Input Value fields installed and working in Tx LB Form
     - Note that there are Value fields that are calculated versus installed
-- [] Get all Input Value fields installed and working in Rx LB Form
+- [x] Get all Input Value fields installed and working in Rx LB Form
     - Note that there are Value fields that are calculated versus installed
+
+- # To Do 7/23
+- [] Submit Blog from Medium.com for grade
+- [] Submit Zoom video of Flatiron Phase-1 Project to YouTube for Project grade
 - [] Display cards in structured list or table format
     - [] Start with "Table Header" for the 5 objects
     - [] Stretch goal is to get data in cards to look like LB Table

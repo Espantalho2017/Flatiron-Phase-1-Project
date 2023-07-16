@@ -13,17 +13,17 @@
 
     <h1>Link Budget Form - Transmit/Uplink Side</h1>
 
-    <form id="create-task-form" action="" method="POST">
+    <form id="create-link-budget-form" action="" method="POST">
     <!-- below is 1st input line for Transmit (Tx) frequency -->
       <label for="tx-frequency">Tx Frequency:</label>
       <input type="text" id="tx-frequency" name="tx-frequency" placeholder="input value">
 
       <!-- below is 2nd input line for Tx Antenna Diameter in Meters -->
-    <label for="tx-antenna-diameter">Antenna Diameter:</label>
+    <label for="tx-antenna-diameter">Tx Antenna Diameter:</label>
     <input type="text" id="tx-antenna-diameter" name="tx-antenna-diameter" placeholder="input value">
     
    <!-- below is 3rd input line for Antenna Aperture Efficiency -->
-   <label for="tx-aperture-effiency">Antenna Aperture Efficiency:</label>
+   <label for="tx-aperture-effiency">Tx Antenna Aperture Efficiency:</label>
    <input type="text" id="tx-aperture-efficiency" name="tx-aperture-efficiency" placeholder="input value">
    
     <!-- below is 4th input line for Tx Power at Antenna Feed in Watts -->
@@ -31,16 +31,47 @@
     <input type="text" id="tx-power" name="tx-power" placeholder="input value">
 
     <!-- below is 5th input line for Range to Target in km -->
-    <label for="range">Range to Target:</label>
-    <input type="text" id="range" name="range" placeholder="input value">
+    <label for="tx-range">Tx Range to Target:</label>
+    <input type="text" id="tx-range" name="tx-range" placeholder="input value">
 
     <!-- below is 6th input line for Bandwidth in Hz -->
-   <label for="bandwidth">Bandwidth:</label>
-   <input type="text" id="bandwidth" name="bandwidth" placeholder="input value">
+   <label for="tx-bandwidth">Tx Bandwidth:</label>
+   <input type="text" id="tx-bandwidth" name="tx-bandwidth" placeholder="input value">
 
    <!-- below is 7th input line for Rx Antenna G/T in dB/K -->
    <label for="rx-g-over-t">Rx Antenna G/T:</label>
    <input type="text" id="rx-g-over-t" name="rx-g-over-t" placeholder="input value">
+
+   <h1>Link Budget Form - Receive/Downlink Side</h1>
+
+    <!-- below is 1st Rx input line for Receive (Rx) frequency -->
+    <label for="rx-frequency">Rx Frequency:</label>
+    <input type="text" id="rx-frequency" name="rx-frequency" placeholder="input value">
+
+    <!-- below is 2nd input line for Rx Antenna Diameter in Meters -->
+    <label for="rx-antenna-diameter">Rx Antenna Diameter:</label>
+    <input type="text" id="rx-antenna-diameter" name="rx-antenna-diameter" placeholder="input value">
+      
+    <!-- below is 3rd input line for Rx Antenna Aperture Efficiency -->
+    <label for="rx-aperture-effiency">Rx Antenna Aperture Efficiency:</label>
+    <input type="text" id="rx-aperture-efficiency" name="rx-aperture-efficiency" placeholder="input value">
+     
+    <!-- below is 4th input line for Rx System Noise Temperature at LNA in K -->
+    <label for="lna-noise-temp">System Noise Temperature at LNA:</label>
+    <input type="text" id="lna-noise-temp" name="lna-noise-temp" placeholder="input value">
+
+    <!-- below is 5th input line for Tx EIRP power in dBw -->
+    <label for="tx-eirp">Tx EIRP:</label>
+    <input type="text" id="tx-eirp" name="tx-eirp" placeholder="input value">
+
+    <!-- below is 6th input line for Rx range from target in km -->
+    <label for="rx-range">Rx Range from Tx:</label>
+    <input type="text" id="rx-range" name="rx-range" placeholder="input value">
+  
+    <!-- below is 7th input line for Rx Bandwidth in Hz -->
+    <label for="rx-bandwidth">Rx Antenna G/T:</label>
+    <input type="text" id="rx-bandwidth" name="rx-bandwidth" placeholder="input value">
+  
 
     <!-- Submit button that "I hope" will save ALL inputs into variable(s) -->
     <input type="submit" value="Submit Values to Calculate">
