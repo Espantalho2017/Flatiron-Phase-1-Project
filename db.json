@@ -1,0 +1,33 @@
+
+{
+    "telecom-systems" : [
+        {
+            "radioLinkType" : "5G" ,
+            "frequencyUpLink" : "3.3 Ghz" ,
+            "antennaDiameterUpLink" : "0.1 meters"
+        } ,
+        {
+            "radioLinkType" : "4G" ,
+            "frequencyUpLink" : "1.9 Ghz",
+            "antennaDiameterUpLink" : "0.1 meters"    
+        },
+        {
+            "radioLinkType" : "LEO Satcom" , 
+            "frequencyUpLink" : "28 Ghz",
+            "antennaDiameterUpLink" : "0.05 meters"
+        },
+        {
+            "radioLinkType" : "MEO Satcom" ,
+            "frequencyUpLink" : "28 Ghz",
+            "antennaDiameterUpLink" : "0.05 meters"
+        },
+        {
+            "radioLinkType" : "GEO Satcom",
+            "frequencyUpLink" : "28 Ghz",
+            "antennaDiameterUpLink" : "0.05 meters" 
+        }
+    ] ,
+
+    "example-end-point" : []
+}
+
