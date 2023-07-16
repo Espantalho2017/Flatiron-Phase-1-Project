@@ -32,11 +32,11 @@
 
 # To Do 7/20
 - [] Create Forms to Input Link Budget Value in each Table row
-    - [] Maybe both LB Tables should be LB Forms??
-    - [] Initially only input values and add LB calculation functions later
+    - [x] Create new LB Forms seapater from LB Tables and merge both later
+    - [x] Initially only input values and add LB calculation functions later
     - [] Later use functions with Math.method() to calcuate LB from inputs
-    - [] A Submit/Click Event??
-    - [] Use .addEventListener() for 1 of 2 events required in this project 
+    - [x] A Submit Event
+    - [x] Use .addEventListener() for 1 of 2 events required in this project 
 - [] Display cards to the right of these Link Budget Forms
     -[] Maybe use CSS to style cards to the right???
     - [] A Click Event??
