@@ -7,6 +7,28 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <!-- I create an example LB Input Form to maybe replace Table below  -->
+
+    <h1>Link Budget Form - Transmit/Uplink Side</h1>
+
+    <form id="create-task-form" action="" method="POST">
+    <!-- below is 1st input line for Transmit (Tx) frequency -->
+      <label for="tx-input-frequency">Tx Frequency in Ghz:</label>
+      <input type="text" id="tx-input-frequency" name="tx-input-frequency" placeholder="input value">
+
+      <!-- below is 2nd input line for Tx Antenna Diameter in Meters -->
+    <label for="tx-antenna-diameter">Antenna Diameter in Meters:</label>
+    <input type="text" id="tx-antenna-diameter" name="tx-antenna-diameter" placeholder="input value">
+    
+   <!-- below is 3rd input line for Antenna Aperture Efficiency -->
+   <label for="tx-aperture-effiency">Antenna Aperture Efficiency as Fraction of 1:</label>
+   <input type="text" id="tx-aperture-effiency" name="tx-aperture-effiency" placeholder="input value">
+   
+    <!-- Submit button that "I hope" will save ALL inputs into variable(s) -->
+    <input type="submit" value="Submit Values to Calculate">
+
+    </form>
+
     <!-- I create the 2 Link Budget Tables (Uplink & Downlink) below -->
     <h2>Link Budget Table - Transmit/Uplink Side</h2>
     <table>
@@ -24,7 +46,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Antenna Aperture Efficiency as a Fraction of 1</td>
+            <td>Antenna Aperture Efficiency as Fraction of 1</td>
             <td></td>
         </tr>
     </table>
