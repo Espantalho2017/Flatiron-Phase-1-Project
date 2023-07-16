@@ -34,26 +34,38 @@ function handleFormSubmit(e) {
 
 console.log("Hello Roscoe") ;
 
+// document.addEventListener('DOMContentLoaded', function() {
 function fetchCards () {
   fetch("http://localhost:3000/telecom-systems")
   .then((resp) => resp.json())
   .then((cardsArray) => {
     console.log(cardsArray) ;
     displayCards(cardsArray) ;
+   const divCardsContainer = document.getElementById('cardInfo');
+   cardsArray.forEach(card => {
+    const h2 = document.createElement('h2');
+    // html display method used below needs improvement
+ //   h2.innerText = [card.radioLinkType , '   ',
+ //                   card.frequencyUpLink , '   ',
+ //                   card.antennaDiameterUpLink] ;
+ //   divCardsContainer.appendChild(h2);
+
+})
   }
     );
 }
+// });
 
 function displayCards(cardsArray) {
   console.log(cardsArray) ;
-  const main = document.querySelector('main');
+  const divCardsContainer = document.getElementById('cardInfo');
   cardsArray.forEach(card => {
     const h2 = document.createElement('h2');
     // html display method used below needs improvement
-    h2.innerHTML = [card.radioLinkType , '   ',
-                    card.frequencyUpLink , '   ',
-                    card.antennaDiameterUpLink] ;
-    main.appendChild(h2);
+    h2.innerText = [card.radioLinkType , ' ',
+                    card.inputValue , '   ',
+                    card.inputValueUnits] ;
+    divCardsContainer.appendChild(h2);
 
 }
 )
@@ -61,13 +73,14 @@ function displayCards(cardsArray) {
 
 // Below is code for button click event to Fetch LB Cards from BackEnd Database
 
-document.getElementById('cardsButton').addEventListener('click', fetchCards);
+// const cardsButton = document.getElementById('cardsButton')
+// console.log(cardsButton) ;
+// cardsButton.addEventListener('click', fetchCards);
 
-/* document.addEventListener('DOMContentLoaded', function() {
-  fetchCards();
-});
-*/ 
-
+// function fetchButton() {
+  document.addEventListener('DOMContentLoaded', fetchCards);
+// } ;
+// fetchButton() ;
 console.log("roscoe");
 
 /*

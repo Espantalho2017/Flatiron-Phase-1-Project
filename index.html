@@ -35,20 +35,85 @@
         <tr>
             <th>Transmit Parameter</th>
             <th>Input Value</th>
+            <th>Units</th>
         </tr>
         <tr>
-            <td>Frequency in Ghz</td>
+            <td>Tx Frequency</td>
             <!-- you need an input form to accept data here -->
             <td></td>
+            <td>Ghz</td>
         </tr>
         <tr>
-            <td>Antenna Diameter in Meters</td>
+            <td>Tx Antenna Diameter</td>
             <td></td>
+            <td>in Meters</td>
         </tr>
         <tr>
-            <td>Antenna Aperture Efficiency as Fraction of 1</td>
+            <td>Tx Antenna Aperture Efficiency</td>
             <td></td>
+            <td>As Fraction of 1</td>
         </tr>
+        <tr>
+            <td>Tx Antenna Gain</td>
+            <td></td>
+            <td>dBi</td>
+        </tr>
+        <tr>
+            <td>Tx Power at the Feed</td>
+            <td></td>
+            <td>Watts</td>
+        </tr>
+        <tr>
+            <td>Tx EIRP</td>
+            <td></td>
+            <td>dBw</td>
+        </tr>
+        <tr>
+            <td>Range to Target</td>
+            <td></td>
+            <td>km</td>
+        </tr>
+        <tr>
+            <td>Path Loss</td>
+            <td></td>
+            <td>dB</td>
+        </tr>
+        <tr>
+            <td>Power Flux Density at Rx</td>
+            <td></td>
+            <td>dBw/m^2</td>
+        </tr>
+        <tr>
+            <td>Bandwidth</td>
+            <td></td>
+            <td>hz</td>
+        </tr>
+        <tr>
+            <td>G/T at Rx</td>
+            <td></td>
+            <td>dB/K</td>
+        </tr>
+        <tr>
+            <td>Carrier to Noise - C/N </td>
+            <td></td>
+            <td>dB</td>
+        </tr>
+        <tr>
+            <td>Processing Gain</td>
+            <td></td>
+            <td>dB</td>
+        </tr>
+        <tr>
+            <td>Eb/No</td>
+            <td></td>
+            <td>dB</td>
+        </tr>
+        <tr>
+            <td>Link Margin</td>
+            <td></td>
+            <td>dB</td>
+        </tr>
+        
     </table>
 
     <h2>Link Budget Table - Receive/Downlink Side</h2>
@@ -56,22 +121,24 @@
         <tr>
             <th>Receiver Parameter</th>
             <th>Input Value</th>
+            <th>Units</th>
         </tr>
         <tr>
-            <td>Frequency in Ghz</td>
+            <td>Frequency</td>
             <!-- you need an input form to accept data here -->
             <td></td>
+            <td>Ghz</td>
         </tr>
         <tr>
-            <td>Antenna Diameter in Meters</td>
+            <td>Antenna Diameter</td>
             <td></td>
         </tr>
         <tr>
-            <td>Antenna Aperture Efficiency as a Fraction of 1</td>
+            <td>Antenna Aperture Efficiency</td>
             <td></td>
         </tr>
         <tr>
-            <td>System Noise Temperature at Antenna LNA in Kelvin</td>
+            <td>System Noise Temperature at LNA</td>
             <td></td>
         </tr>
     </table>
@@ -79,9 +146,10 @@
 <!-- Adding my button to Fetch and Display Telecom Cards here -->
 
 <h1> Telecom Cards Button</h1>
+<!-- <button onclick = "fetchButton()"> Telecom Cards Button </button> -->
 <button id = "cardsButton" type = "button"> Telecom Cards Button </button>
+    <div id = "cardInfo"></div>
 
-    <main></main>
 </body>
 </html>
 
