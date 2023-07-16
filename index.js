@@ -34,8 +34,6 @@ function handleFormSubmit(e) {
 
 console.log("Hello Roscoe") ;
 
-// 
-
 function fetchCards () {
   fetch("http://localhost:3000/telecom-systems")
   .then((resp) => resp.json())
@@ -61,9 +59,14 @@ function displayCards(cardsArray) {
 )
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+// Below is code for button click event to Fetch LB Cards from BackEnd Database
+
+document.getElementById('cardsButton').addEventListener('click', fetchCards);
+
+/* document.addEventListener('DOMContentLoaded', function() {
   fetchCards();
 });
+*/ 
 
 console.log("roscoe");
 
