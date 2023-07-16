@@ -31,14 +31,28 @@
     -[] Maybe use CSS to style Link Budget form to the left???
 
 # To Do 7/20
-- [] Create Forms to Input Link Budget Value in each Table row
+- [x] Create Forms to Input Link Budget Value in each Table row
     - [x] Create new LB Forms seapater from LB Tables and merge both later
     - [x] Initially only input values and add LB calculation functions later
     - [] Later use functions with Math.method() to calcuate LB from inputs
     - [x] A Submit Event
+        - [] Submit Event does not work, so get it working
     - [x] Use .addEventListener() for 1 of 2 events required in this project 
+- [] Button Click Event that Displays the Telecom Cards
+    - [x] Button created but is not working
+
+
+- # To Do 7/21
+- [x] Button Click Event that Displays the Telecom Cards - get it working
+    - [x] Used .addEventListener() for 1st of 2 events required in this project 
+- [x] Submit Event for LB Form does not work - get it working 
+    - [x] Used .addEventListener() for 2nd of 2 events required in this project 
+
+- # To Do 7/22
+- [] Get all Input Value fields installed and working in LB Form
+- [] Display cards in structured list or table format
+    - [] Start with "Table Header" for the 5 objects
+    - [] Stretch goal is to get data in cards to look like LB Table
 - [] Display cards to the right of these Link Budget Forms
     -[] Maybe use CSS to style cards to the right???
-    - [] A Click Event??
-    - [] Use .addEventListener() for 1 of 2 events required in this project 
-- [] Display cards in structured list or table format
+    

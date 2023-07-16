@@ -10,11 +10,11 @@ html {
   body {
     min-height: 100%;
     min-width: 100%;
-    background: linear-gradient(pink, violet);
+    background: linear-gradient(green, white);
   }
   
   button {
-    font-size: 7px;
+    font-size: 18px;
   }
   
   #main-content {
