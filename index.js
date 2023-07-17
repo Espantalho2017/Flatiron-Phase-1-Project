@@ -47,6 +47,12 @@ function handleFormSubmit(e) {
     lnaNoiseTemp, txEIRP, rxRange, rxBandwidth) ;
   // this function maybe needs to return values in an array/object
 
+  // below is a holdover until link margin calculations are added
+  // link margin calculations will require multiple functions doing math
+  const linkBudgetCalculation = document.getElementById('linkBudgetCalculation');
+  const h2 = document.createElement('h2');
+    h2.innerText = `Link Margin is ${txFrequency} until site is upgraded` ;
+    linkBudgetCalculation.appendChild(h2);
 }
 
 

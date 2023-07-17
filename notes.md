@@ -57,6 +57,8 @@
     - Note that there are Value fields that are calculated versus installed
 
 - # To Do 7/23
+- [x] Add a holdover to display a Link Margin calculation field
+    - Link Margin Calculation requires multiple functions doing math
 - [x] Submit your Blog from Medium.com for grade
 - [] Submit Zoom video of Flatiron Phase-1 Project to YouTube for Project grade
 - [] Display cards in structured list or table format
