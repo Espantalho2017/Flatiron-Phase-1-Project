@@ -2,7 +2,7 @@
 
 ## Description
 
-This Flatiron Phase 1 Project provides typical link budget scenarios for input in the form of Telecom Cards that show the input parameters for different link budget scenarios. These Telecom Cards will display next to an actual Link Budget Form that can receive input parameters to calcolate a link budget.
+This Flatiron Phase 1 Project provides typical link budget scenarios for input in the form of Telecom Cards that show the input parameters for different link budget scenarios. These Telecom Cards will display next to an actual Link Budget Form that can receive input parameters to calculate a link budget.
 
 ## Installation
 
