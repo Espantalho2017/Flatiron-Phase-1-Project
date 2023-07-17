@@ -57,7 +57,7 @@
     - Note that there are Value fields that are calculated versus installed
 
 - # To Do 7/23
-- [] Submit Blog from Medium.com for grade
+- [] Submit your Blog from Medium.com for grade
 - [] Submit Zoom video of Flatiron Phase-1 Project to YouTube for Project grade
 - [] Display cards in structured list or table format
     - [] Start with "Table Header" for the 5 objects
