@@ -79,12 +79,12 @@ function displayCards(cardsArray) {
   console.log(cardsArray) ;
   const divCardsContainer = document.getElementById('cardInfo');
   cardsArray.forEach(card => {
-    const h2 = document.createElement('h2');
-    // html display method used below needs improvement
-    h2.innerText = [card.radioLinkType , ' ',
+    const tableHead = document.createElement('h2');
+    // h2 tag for now; in future title row of cards to display as Table Head
+    tableHead.innerText = [card.radioLinkType , ' ',
                     card.inputValue , '   ',
                     card.inputValueUnits] ;
-    divCardsContainer.appendChild(h2);
+    divCardsContainer.appendChild(tableHead);
 
 }
 )
