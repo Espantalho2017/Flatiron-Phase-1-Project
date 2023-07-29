@@ -67,3 +67,12 @@
 - [] Display cards to the right of these Link Budget Forms
     -[] Maybe use CSS to style cards to the right???
 
+- # To Do 8/4
+- [x] Change layout of LB form using FieldSet - help from Matt Eva
+- [x] Start adding equations in functions to calculate Link Budgets
+
+- # To Do 8/5
+-[x] Find Link Budget Equations to do the calculations
+
+- # To Do 8/6
+- [] Finish adding Link Budget equation to functions

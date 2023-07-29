@@ -99,5 +99,32 @@ function displayCards(cardsArray) {
 console.log("roscoe");
 
 
+// Below is code to calculate link budget parameters
+
+function calculateTxGain(frequency, antennaDiameter, antennaEfficiency) {
+  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
+  return calculatedValue;
+}
+
+function calculateTxEIRP() {
+  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
+  return calculatedValue;
+}
+
+function calculateTxPathLoss() {
+  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
+  return calculatedValue;
+}
+
+function calculateUpLinkCtoN () {
+  const txGain = calculateTxGain
+  const txEirp = calculateTxEIRP
+  const txPathLoss = calculateTxPathLoss
+
+  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
+  return calculatedValue;
+}
+
+
 
   

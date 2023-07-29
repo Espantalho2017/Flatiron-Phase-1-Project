@@ -11,9 +11,12 @@
 <body>
     <!-- I create an example LB Input Form to maybe replace Table below  -->
 
-    <h1>Link Budget Form - Transmit/Uplink Side</h1>
-
     <form id="create-link-budget-form" action="" method="POST">
+
+        <fieldset>
+    
+      <legend>Link Budget Form - Transmit/Uplink Side</legend>
+
     <!-- below is 1st input line for Transmit (Tx) frequency -->
       <label for="tx-frequency">Tx Frequency:</label>
       <input type="text" id="tx-frequency" name="tx-frequency" placeholder="input value">
@@ -42,7 +45,10 @@
    <label for="rx-g-over-t">Rx Antenna G/T:</label>
    <input type="text" id="rx-g-over-t" name="rx-g-over-t" placeholder="input value">
 
-   <h1>Link Budget Form - Receive/Downlink Side</h1>
+    </fieldset>
+
+    <fieldset>
+   <legend>Link Budget Form - Receive/Downlink Side</legend>
 
     <!-- below is 1st Rx input line for Receive (Rx) frequency -->
     <label for="rx-frequency">Rx Frequency:</label>
@@ -76,6 +82,8 @@
     <!-- Submit button that "I hope" will save ALL inputs into variable(s) -->
     <input type="submit" value="Submit Values to Calculate">
     <div id="linkBudgetCalculation"></div>
+
+        </fieldset>
 
     </form>
 
