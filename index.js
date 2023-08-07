@@ -39,19 +39,26 @@ function handleFormSubmit(e) {
   const rxAntennaDiameter = e.target["rx-antenna-diameter"].value
   const rxApertureEfficiency = e.target["rx-aperture-efficiency"].value
   const lnaNoiseTemp = e.target["lna-noise-temp"].value
-  const txEIRP = e.target["tx-eirp"].value
+  const transmitEIRP = e.target["tx-eirp"].value
   const rxRange = e.target["rx-range"].value
   const rxBandwidth = e.target["rx-bandwidth"].value
 
   console.log(rxFrequency, rxAntennaDiameter, rxApertureEfficiency, 
-    lnaNoiseTemp, txEIRP, rxRange, rxBandwidth) ;
+    lnaNoiseTemp, transmitEIRP, rxRange, rxBandwidth) ;
   // this function maybe needs to return values in an array/object
 
   // below is a holdover until link margin calculations are added
   // link margin calculations will require multiple functions doing math
+
+    const gain = txGain(txFrequency, txAntennaDiameter, txApertureEfficiency) ;
+    const eirp = txEIRP(gain, txPower) ;
+    const pathLoss = txPathLoss(txRange, txFrequency) ;
+    const linkBudgetCtoN = linkCtoN(eirp, pathLoss, txBandwidth, rxGT) ;
+
+
   const linkBudgetCalculation = document.getElementById('linkBudgetCalculation');
   const h2 = document.createElement('h2');
-    h2.innerText = `Link Margin is ${txFrequency} until site is upgraded` ;
+    h2.innerText = `Gain: ${gain} EIRP: ${eirp} PL: ${pathLoss} C/N: ${linkBudgetCtoN}` ;
     linkBudgetCalculation.appendChild(h2);
 }
 
@@ -101,30 +108,34 @@ console.log("roscoe");
 
 // Below is code to calculate link budget parameters
 
-function calculateTxGain(frequency, antennaDiameter, antennaEfficiency) {
-  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
-  return calculatedValue;
+function txGain(frequency, diameter, efficiency) {
+  // Antenna Gain = 10 log10 (4πηA/λ**2)
+  // π is pi = 3.14159265359 
+  // η is the efficiency, 
+  // A is the physical aperture area, 
+  area = (Math.PI * ((diameter/2)**2))
+  // λ = C/frequency with C as the speed of light
+  lambda = 0.299792458/frequency
+  console.log(10*Math.log(4*Math.PI*efficiency*area*(lambda**2))/ Math.log(10)) ;
+  return 10*Math.log((4*Math.PI*efficiency*area)/(lambda**2))/ Math.log(10) ;
 }
 
-function calculateTxEIRP() {
-  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
-  return calculatedValue;
+function txEIRP(power, gain) {
+  // EIRP = gain + 10*log(power in Watts) ;
+  console.log(gain + 10*Math.log(power)/ Math.log(10)) ;
+  return gain + 10*Math.log(power)/ Math.log(10) ;
 }
 
-function calculateTxPathLoss() {
-  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
-  return calculatedValue;
+function txPathLoss(range, frequency) {
+  // Path Loss = 20×log(range) + 20×log(frequency) + 92.45 
+  console.log(20*Math.log(range)/Math.log(10) + 20*Math.log(frequency)/Math.log(10) + 92.45) ;
+  return 20*Math.log(range)/Math.log(10) + 20*Math.log(frequency)/Math.log(10) + 92.45;
 }
 
-function calculateUpLinkCtoN () {
-  const txGain = calculateTxGain
-  const txEirp = calculateTxEIRP
-  const txPathLoss = calculateTxPathLoss
-
-  const calculatedValue = Math.log(frequency*antennaDiameter*antennaDiameter*)
-  return calculatedValue;
+function linkCtoN (eirp, pathLoss, bandwidth, gOverT) {
+  // C/N = EIRP - Path Loss - 10*log(bandwidth) + G/T + 228.6
+  console.log(eirp-pathLoss-10*Math.log(bandwidth)/Math.log(10)+gOverT+228.6) ;
+  return eirp - pathLoss - 10*Math.log(bandwidth)/Math.log(10) + gOverT + 228.6 ;
 }
-
-
 
   

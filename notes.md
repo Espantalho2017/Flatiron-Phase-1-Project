@@ -75,4 +75,8 @@
 -[x] Find Link Budget Equations to do the calculations
 
 - # To Do 8/6
-- [] Finish adding Link Budget equation to functions
+- [x] Finish adding the real Link Budget equation to functions
+- [x] Output C/N and other Link Budget calculations to web site
+
+
+
